@@ -21,11 +21,6 @@
 					link.type = 'text/css';
 					link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 					document.getElementsByTagName( 'head' )[0].appendChild( link );
-					/*document.onkeydown = function (e) {
-		  			if (e.keyCode === 116) {
-		    			return false;
-		  			}
-					};*/
 				</script>
 
 				<!--[if lt IE 9]>
@@ -560,11 +555,11 @@
 							//{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 							{ src: 'plugin/zoom-js/zoom.js', async: true },
 							{ src: 'plugin/notes/notes.js', async: true }
-						]/*,
+						],
 						keyboard: {
 							//disable F5 - due to clicker
 							116: null
-						}*/
+						}
 					});
 				</script>
 
